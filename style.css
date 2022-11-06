@@ -57,3 +57,13 @@
     font-size:small;
     padding: 1rem 0px;
 }
+.cardNum{
+    letter-spacing: .1rem;
+}
+.cvc{
+    position: absolute;
+    color: #ffffff;
+    top: 5.6rem;
+    right: 15%;
+    letter-spacing:.1rem ;
+}

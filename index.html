@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Interactive card details form</title>
+  <title> Interactive card details form</title>
   <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,10 +27,28 @@
           <span class="card_name">Dubem Daniel</span><span class="card_date">05/10</span>
         </div>
       </div>
+      <div class="cvc"><h5>225</h5></div>
     </div>
-    <div class="body"></div>
+    <div class="body">
+      <form action="#">
+        <div class="name_div">
+          <label for="name"><h6>cardholder name</h6></label>
+          <input type="text" id="name" placeholder="e.g. Dubem Daniel">
+        </div>
+        <div class="number_div">
+          <label for="number"><h6>card number</h6></label>
+          <input type="number" name="" id="number" placeholder="e.g 1234 5678 9123 4567">
+        </div>
+        <div class="date_cvc">
+          <div class="date_div">
+            <label for="date">exp. date (mm/yy)</label>
+            <input type="text" id="date" placeholder="MM">
+            <input type="text" id="date" placeholder="YY">
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
-
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
