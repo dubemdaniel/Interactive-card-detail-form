@@ -165,7 +165,7 @@ form div div{
         left: 55%;
     }
     .back_img{
-        top: 45vh;
+        top: 18rem;
         left: 70%;
     }
     .card_details{
@@ -178,10 +178,14 @@ form div div{
 
     .white_circle{
         top: 8rem;
-        left: 12%;
+        left: 64%;
     }
     .transparent_circle{
         top: 8.5rem;
-        left: 25%;
+        left: 75%;
+    }
+    .cvc{
+        top: 22.4rem;
+        left: 120%;
     }
 }
