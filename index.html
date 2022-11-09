@@ -24,10 +24,10 @@
       <div class="card_details">
         <h3 class="cardNum">0000 0000 0000 0000</h3>
         <div class="names_date">
-          <span class="card_name">Dubem Daniel</span><span class="card_date">05/10</span>
+          <span class="card_name">Dubem Daniel</span><span class="card_date"><span id="month">05</span>/<span id="year">10</span></span>
         </div>
       </div>
-      <div class="cvc"><h5>225</h5></div>
+      <div class="cvc"><h5 id="_cvc">225</h5></div>
     </div>
     <div class="body">
       <form action="#">
@@ -37,13 +37,13 @@
         </div>
         <div class="number_div">
           <label for="number"><h6>card number</h6></label>
-          <input type="number" name="" id="number" placeholder="e.g 1234 5678 9123 4567">
+          <input type="text" name="" id="number" placeholder="e.g 1234 5678 9123 4567">
         </div>
         <div class="date_cvc">
           <div class="date_div">
             <label for="date"><h6>exp. date (mm/yy)</h6></label>
             <input type="text" id="date" placeholder="MM">
-            <input type="text" id="date" placeholder="YY">
+            <input type="text" id="year_date" placeholder="YY">
           </div>
           <div class="cvc_div">
             <label for="cvc"><h6>cvc</h6></label>
@@ -67,6 +67,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Dubem Daniel</a>.
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
 

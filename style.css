@@ -98,6 +98,10 @@ input{
     padding: 0px .6rem;
     outline: none;
 }
+input:focus{
+    border-color: hsl(278, 84%, 31%);
+}
+
 input::placeholder{
     color: rgba(0, 0, 0, 0.216);
 }
