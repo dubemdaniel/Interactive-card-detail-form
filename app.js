@@ -58,3 +58,11 @@ cvcInput.addEventListener('keyup', () => {
 
     cardCvc.appendChild(document.createTextNode(cvcInput.value))
 })
+
+// event listener for submit
+const submit = document.getElementById('submit')
+
+submit.addEventListener('submit', () => {
+
+    
+})
