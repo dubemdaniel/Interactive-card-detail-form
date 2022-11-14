@@ -62,7 +62,23 @@ cvcInput.addEventListener('keyup', () => {
 // event listener for submit
 const submit = document.getElementById('submit')
 
-submit.addEventListener('submit', () => {
+submit.addEventListener('submit', (e) => {
 
-    
+    if (inputName == ''){
+
+        // const nameError = document.getElementById('name_error');
+
+        // nameError.innerHTML = 'please input card name...'
+
+        alert('ur pa')    }
+
+    e.preventDefault
 })
+
+
+
+// myInput.oninput = function () {
+//     if (this.value.length > 4) {
+//         this.value = this.value.slice(0,4); 
+//     }
+// }
