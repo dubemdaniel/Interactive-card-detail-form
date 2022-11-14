@@ -60,17 +60,24 @@ cvcInput.addEventListener('keyup', () => {
 })
 
 // event listener for submit
-const submit = document.getElementById('submit')
+const submitAll = document.getElementById('submit')
 
-submit.addEventListener('submit', (e) => {
+submitAll.addEventListener('submit', (e) => {
 
-    if (inputName == ''){
+    const inputName = document.getElementById('name')
+
+    inputName.value = ''
+
+    if (inputName.value === ''){
 
         // const nameError = document.getElementById('name_error');
 
         // nameError.innerHTML = 'please input card name...'
 
-        alert('ur pa')    }
+
+
+        console.log('ur pa')
+      }
 
     e.preventDefault
 })
