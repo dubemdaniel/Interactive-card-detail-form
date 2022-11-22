@@ -80,6 +80,7 @@ submitAll.addEventListener('submit', (e) => {
       }
 
     e.preventDefault
+    
 })
 
 
