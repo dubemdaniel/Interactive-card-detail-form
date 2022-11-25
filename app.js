@@ -12,8 +12,8 @@ inputName.addEventListener('keyup', () => {
 // event listener for number input
 const InputNumber = document.getElementById('number')
 
-InputNumber.addEventListener('keyup', () => {
-    
+InputNumber.addEventListener('keyup', (e) => {
+    console.log(e.key)
     const cardNumber = document.querySelector('.cardNum')
 
     cardNumber.textContent = ''
