@@ -41,8 +41,14 @@ InputNumber.addEventListener('keyup', (e) => {
 
     InputNumber.style.borderColor = ''
 
+    let num = InputNumber.value
 
-    cardNumber.appendChild(document.createTextNode(InputNumber.value))
+    let numSpace = num.match(/.{1,4}/g);
+
+    cardNumber.innerHTML = numSpace.join(" ")
+
+
+    // cardNumber.appendChild(document.createTextNode(InputNumber.value))
 })
 
 // event listener for month date
