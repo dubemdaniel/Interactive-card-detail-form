@@ -127,6 +127,17 @@ form div div{
     color: #ffffff;
     background-color:hsl(278, 68%, 11%) ;
 }
+
+.error{
+    margin-top: -.5rem;
+    font-size: x-small;
+    font-weight: 800;
+    padding: 0px 0px 0px .5rem;
+    color: rgba(255, 0, 0, 0.661);
+}
+.date_error{
+    padding: 0px;
+}
 /* ==================================================== */
 /* thank you design */
 .thanks{
