@@ -1,10 +1,17 @@
 // creating event listener for the name input
 const inputName = document.getElementById('name')
+
+const nameError = document.querySelector('.name_error')
+
 inputName.addEventListener('keyup', () => {
     
     const cardName = document.querySelector('.card_name')
 
     cardName.textContent = ''
+
+    nameError.innerHTML = ''
+
+    inputName.style.borderColor = ""
 
     cardName.appendChild(document.createTextNode(inputName.value))
 })
@@ -120,22 +127,64 @@ cvcInput.addEventListener('keyup', () => {
 // event listener for submit
 const submitAll = document.getElementById('submit')
 
-submitAll.addEventListener('submit', (e) => {
+submitAll.addEventListener('click', (e) => {
+    if (!inputName.value) {
+        nameError.innerHTML = "Can't be blank";
+    
+        inputName.style.borderColor = "rgba(255, 0, 0, 0.661)";
+        console.log('normal')
+        return false;
 
-    const inputName = document.getElementById('name')
+      }else{
+          nameError.innerHTML = ''
 
-    inputName.value = ''
-
-    if (inputName.value === ''){
-
-        // const nameError = document.getElementById('name_error');
-
-        // nameError.innerHTML = 'please input card name...'
-
-
-
-        console.log('ur pa')
+          inputName.style.borderColor = ""
       }
+    
+      if (!InputNumber.value) {
+        //
+        numError.innerHTML = "Can't be blank";
+    
+        InputNumber.style.borderColor = "rgba(255, 0, 0, 0.661)";
+    
+        return false;
+      }
+    
+      if (!monthInput.value) {
+        //
+        dateError.innerHTML = "Can't be blank";
+    
+        monthInput.style.borderColor = "rgba(255, 0, 0, 0.661)";
+    
+        return false;
+      }
+    
+      if (!yearInput.value) {
+        //
+        dateError.innerHTML = "Can't be blank";
+    
+        yearInput.style.borderColor = "rgba(255, 0, 0, 0.661)";
+    
+        return false;
+      }
+    
+      if (!cvcInput.value) {
+        //
+        cvcError.innerHTML = "Can't be blank";
+    
+        cvcInput.style.borderColor = "rgba(255, 0, 0, 0.661)";
+    
+        return false;
+      }
+    
+      const body = document.querySelector('.body')
+
+      const thanks = document.querySelector('.thanks')
+
+      body.style.display = 'none'
+
+      thanks.style.display = 'block'
+
 
     e.preventDefault
     
