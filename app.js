@@ -32,11 +32,20 @@ InputNumber.addEventListener('keyup', (e) => {
 
         return false
     }
-
     const cardNumber = document.querySelector('.cardNum')
 
     cardNumber.textContent = '';
 
+
+    if(cardNumber.value >= 1 ){
+        cardNumber.textContent = '';
+
+    }else{
+        cardNumber.textContent = '0000 0000 0000 0000';
+
+    }
+
+    
     numError.textContent = '';
 
     InputNumber.style.borderColor = ''
