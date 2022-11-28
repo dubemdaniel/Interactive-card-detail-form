@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   
   <title> Interactive card details form</title>
   <link rel="stylesheet" href="style.css">
@@ -18,8 +18,8 @@
 <body>
   <div class="container">
     <div class="header">
-      <img src="images/bg-card-back.png" alt="" class="back_img">
-      <img src="images/bg-card-front.png" alt="" class="front_img">
+      <img src="/images/bg-card-back.png" alt="" class="back_img">
+      <img src="/images/bg-card-front.png" alt="" class="front_img">
       <span class="white_circle"></span><span class="transparent_circle"></span>
       <div class="card_details">
         <h3 class="cardNum">0000 0000 0000 0000</h3>
@@ -30,10 +30,10 @@
       <div class="cvc"><h5 id="_cvc">225</h5></div>
     </div>
     <div class="body">
-      <form >
+      <form action="#">
         <div class="name_div">
           <label for="name"><h6>cardholder name</h6></label>
-          <input type="text" id="name" placeholder="e.g. Dubem Daniel">
+          <input type="text" id="name" placeholder="e.g. Dubem Daniel" maxlength="30">
           <p class="name_error error"></p>
         </div>
         <div class="number_div">
@@ -62,7 +62,7 @@
       </form>
     </div>
    <div class="thanks">
-     <img src="images/icon-complete.svg" alt="">
+     <img src="/images/icon-complete.svg" alt="">
      <h1>THANK YOU!</h1>
      <h5>We've added your card details</h5>
      <input type="submit" id="continue" value="Continue">
@@ -71,35 +71,8 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Dubem Daniel</a>.
+    Coded by <a href="#">Dubem Daniel</a>
   </div>
   <script src="app.js"></script>
 </body>
 </html>
-
-<!-- 0000 0000 0000 0000 -->
-<!-- Jane Appleseed
-00/00
-
-000
-
-Cardholder Name
-e.g. Jane Appleseed
-
-Card Number
-e.g. 1234 5678 9123 0000
-
-Exp. Date (MM/YY)
-MM
-YY
-
-CVC
-e.g. 123
-
-Confirm
-
-Completed state start
-
-Thank you!
-We've added your card details
-Continue -->

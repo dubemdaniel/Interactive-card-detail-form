@@ -9,9 +9,9 @@ inputName.addEventListener('keyup', () => {
 
     cardName.textContent = ''
 
-    nameError.innerHTML = ''
+    // nameError.innerHTML = ''
 
-    inputName.style.borderColor = ""
+    // inputName.style.borderColor = ""
 
     cardName.appendChild(document.createTextNode(inputName.value))
 })
@@ -133,7 +133,12 @@ cvcInput.addEventListener('keyup', () => {
 // event listener for submit
 const submitAll = document.getElementById('submit')
 
-submitAll.addEventListener('click', (e) => {
+submitAll.addEventListener('click' , add)
+
+ function add(e){
+     console.log('u dey mad')
+
+
     if (!inputName.value) {
         nameError.innerHTML = "Can't be blank";
     
@@ -182,19 +187,19 @@ submitAll.addEventListener('click', (e) => {
     
         return false;
       }
-    
-      const body = document.querySelector('.body')
 
-      const thanks = document.querySelector('.thanks')
+        const body = document.querySelector('.body')
 
+        const thanks = document.querySelector('.thanks')
+     
       body.style.display = 'none'
 
       thanks.style.display = 'block'
 
 
-    e.preventDefault
+    e.preventDefault()
     
-})
+}
 
 
 
